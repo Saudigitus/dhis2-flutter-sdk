@@ -27,7 +27,7 @@ class ProgramStageSectionDataElement extends BaseEntity {
     return ProgramStageSectionDataElement(
         id: '${jsonData['programStageSection']}_${jsonData['dataElement']}',
         dirty: jsonData['dirty'],
-        dataElement: jsonData['dataElement'],
+        dataElement: jsonData['dataElement'] ?? '',
         programStageSection: jsonData['programStageSection'],
         created: jsonData['created'],
         lastUpdated: jsonData['lastUpdated']);
